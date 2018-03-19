@@ -10,8 +10,8 @@ public class ActionFactory {
     private Action action;
 
     public ActionFactory() {
-        actions.put("GET/users", new HomeAction());
-        actions.put("GET/users/listusers", new ListUsersAction());
+        actions.put("GET/servlet", new HomeAction());
+        actions.put("GET/servlet/listusers", new ListUsersAction());
 
     }
 
@@ -21,7 +21,7 @@ public class ActionFactory {
         System.out.println(actionKey);
         action = actions.get(actionKey);
         if (action == null) {
-            action = actions.get("GET/users");
+            action = actions.get("GET/servlet");
         }
 
         return action;
