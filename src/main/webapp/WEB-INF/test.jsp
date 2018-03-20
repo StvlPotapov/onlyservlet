@@ -2,20 +2,19 @@
 <%--
   Created by IntelliJ IDEA.
   User: usr
-  Date: 19.03.2018
-  Time: 18:16
+  Date: 20.03.2018
+  Time: 15:38
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>list of users</title>
+    <title>test</title>
 </head>
 <body>
-<h1> Our users are:</h1>
-<c:forEach items=" ${requestScope.listusers} " var="listusers">
-    <c:out value="${listusers}"/>
-            <%--<br> ${listusers}--%>
+<c:forEach items=" ${requestScope.testHashMap} " var="test">
+    <c:out value="${test}"/>
+    <%--<br> ${listusers}--%>
 </c:forEach>
 
 </body>

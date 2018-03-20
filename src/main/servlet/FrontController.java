@@ -7,6 +7,11 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
 
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
+
 public class FrontController extends HttpServlet {
 
     private static final long serialVersionUID = 1L;
@@ -14,14 +19,16 @@ public class FrontController extends HttpServlet {
     protected void doGet(HttpServletRequest request,
                          HttpServletResponse response) throws ServletException, IOException {
         try {
-            Action action = AbstractActionFactory.getInstance().getAction(
-                    request);
+            Action action = AbstractActionFactory.getInstance().getAction(request);
             String view = action.execute(request, response);
+
             getServletContext().getRequestDispatcher(view).forward(request, response);
 
         } catch (Exception e) {
-            // TODO ?
             e.printStackTrace();
         }
     }
+
+
 }
+

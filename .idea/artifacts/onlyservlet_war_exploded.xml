@@ -13,6 +13,9 @@
           <element id="library" level="project" name="Maven: org.jboss.interceptor:jboss-interceptor-api:1.1" />
           <element id="library" level="project" name="Maven: javax.annotation:jsr250-api:1.0" />
           <element id="library" level="project" name="Maven: javax.inject:javax.inject:1" />
+          <element id="library" level="project" name="Maven: com.vaadin.external.google:android-json:0.0.20131108.vaadin1" />
+          <element id="library" level="project" name="Maven: org.apache.tomcat.embed:tomcat-embed-core:8.5.27" />
+          <element id="library" level="project" name="Maven: org.apache.tomcat:tomcat-annotations-api:8.5.27" />
         </element>
       </element>
       <element id="directory" name="META-INF">

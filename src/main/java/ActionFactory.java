@@ -12,6 +12,7 @@ public class ActionFactory {
     public ActionFactory() {
         actions.put("GET/servlet", new HomeAction());
         actions.put("GET/servlet/listusers", new ListUsersAction());
+        actions.put("GET/servlet/test", new TestAction());
 
     }
 
